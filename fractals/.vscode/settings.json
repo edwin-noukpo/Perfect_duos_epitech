@@ -1,0 +1,8 @@
+{
+    "files.associations": {
+        "struct.h": "c",
+        "d_list.h": "c",
+        "tree.h": "c",
+        "utils.h": "c"
+    }
+}

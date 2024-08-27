@@ -1,0 +1,76 @@
+
+valgrind ./fractals 7 "##@#." "..@.."; gprof fractals gmon.out > analysis.txt
+
+valgrind ./fractals 7 "##@#." "..@.."; gprof fractals gmon.out > analysis_fractas_functions.txt 
+
+valgrind ./fractals 7 "##@#." "..@.." > valgrind_fractals ; gprof fractals gmon.out > analysis_fractas_functions.txt 
+
+valgrind ./fractals 0 "##@#." "..@.." > test_00 ; gprof fractals gmon.out > analysis_fractas_functions.txt 
+
+valgrind ./fractals 1 "##@#." "..@.." > test_01
+
+valgrind ./fractals 2 "##@#." "..@.." > test_02
+
+valgrind ./fractals 1 "###@#.#@###" "...@...@..." > test_03
+
+valgrind ./fractals 3 "###@#.#@###" "...@...@..." > test_04
+
+valgrind ./fractals 5 "###@#.#@###" "...@...@..." > test_05
+
+valgrind ./fractals 5 "###@#.#@###" "...@...@..." > test_06
+
+valgrind ./fractals 4 "###@#.#@###" "...@...@..." > test_05
+
+clear
+
+make tests_run 
+
+clear
+
+make fclean 
+
+make re
+
+clear
+
+./fractals 
+
+./fractals etded erg erg ersg
+
+./fractals etded erg erg ersg erdg
+
+./fractals etded erg erg
+
+./fractals etded erg
+
+./fractals 2 "er" "er"
+
+./fractals 2 "@@@@" "@@@"
+
+./fractals 2 ".@@@@." ".@@@."
+
+./fractals 8 ".@@@@." ".@@@."
+
+./fractals 8 ".@@@@." ".@@@." | cat -e
+
+valgrind ./fractals 8 ".@@@@." ".@@@." | cat -e
+
+valgrind ./fractals 2 ".@@@@." ".@@@." | cat -e
+
+valgrind ./fractals 2 "#.@@@@.#" "#.@@@.#" | cat -e
+
+valgrind ./fractals 10 "#.@@@@.#" "#.@@@.#" | cat -e
+
+valgrind ./fractals 5 "#.@@@@.#" "#.@@@.#" | cat -e
+
+valgrind ./fractals 5 "#.@.#" "#.@.#" | cat -e
+
+valgrind ./fractals 6 "#.@.#" "#.@.#" | cat -e
+
+valgrind ./fractals 7 "#.@.#" "#.@.#" | cat -e
+
+valgrind ./fractals 8 "#.@.#" "#.@.#" | cat -e
+
+valgrind ./fractals 10 "#.@.#" "#.@.#" | cat -e
+
+valgrind ./fractals 15 "#.@.#" "#.@.#" | cat -e
