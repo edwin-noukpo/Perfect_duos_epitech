@@ -75,7 +75,7 @@ autre 	= 	*~	\
 all	: 	$(LIBNAME)
 
 $(LIBNAME):	$(SRC)
-		gcc -o $(LIBNAME) $(SRC) $(PROJECT_SRC) src/main.c -g3 -g -lm -pg
+		gcc -o $(LIBNAME) $(SRC) $(PROJECT_SRC) src/main.c -g3 -g -lm
 
 clean:
 		rm -f $(OBJ)

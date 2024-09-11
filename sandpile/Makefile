@@ -57,7 +57,7 @@ src/utils/read_file.c\
 src/utils/split.c\
 src/utils/tab_len.c\
 
-PROJECT_SRC	=	src/sandpile/assembly_fractals.c\
+PROJECT_SRC	=	src/sandpile/assembly_sandpile.c\
 src/sandpile/free_sand.c\
 src/sandpile/handling_errors.c\
 src/sandpile/handling_iterations.c\
@@ -78,7 +78,7 @@ autre 	= 	*~	\
 all	: 	$(LIBNAME)
 
 $(LIBNAME):	$(SRC)
-		gcc -o $(LIBNAME) $(SRC) $(PROJECT_SRC) src/main.c -g3 -g -lm -pg
+		gcc -o $(LIBNAME) $(SRC) $(PROJECT_SRC) src/main.c -g3 -g -lm
 
 clean:
 		rm -f $(OBJ)
